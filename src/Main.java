@@ -23,8 +23,8 @@ public class Main {
         spending1[2] = 3963;
         spending1[3] = 1853;
         spending1[4] = 9855;
-        int maxSpending = 1;
-        int minSpending = 999999;
+        int maxSpending = spending1[0];
+        int minSpending = spending1[0];
         for (int i = 0; i < spending.length; i++) {
             final int spend = spending1[i];
             if (spend > maxSpending) {
@@ -40,11 +40,11 @@ public class Main {
         System.out.println("Задача 3");
         int[] accounting = {8466, 8462, 8186, 3245, 4563};
         double mid = 0;
-        int max = 0;
+        double max = 0;
         for (int i = 0; i < accounting.length; i++) {
             max += accounting[i];
-            mid = max / accounting.length;
         }
+        mid = max / accounting.length;
         System.out.println("Средняя сумма трат за месяц составила " + mid + " рублей.");
         System.out.println();
 
